@@ -19,8 +19,7 @@ This project will include understanding RAY, Kubernetes, and Operate First on a 
 # Solution Concept
 Our goal is to integrate Ray with ODH on MOC but let’s take a look at its integration on Openshift:
 
-
-Figure: Architecture of Ray Integration with ODH on Openshift
+<img width="800" alt="Screen Shot 2022-10-10 at 7 19 25 PM" src="https://user-images.githubusercontent.com/61075964/194966254-37de6ef1-ecb4-4776-832a-2f36c46477ba.png">
 
 This image shows how Ray helps to parallelize tasks in the AI pipeline of ODH on the Openshift. Openshift is a Kubernetes-based container platform and Open Data Hub (ODH) provides a blueprint to building an AI as a service on this platform. As you write @ray.remote in the start of your code in the ODH pipeline, Ray operator creates pods which parallelize the tasks and help to scale the AI and python workloads. 
 
